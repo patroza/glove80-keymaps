@@ -14,6 +14,61 @@
 //
 //////////////////////////////////////////////////////////////////////
 
+// patroza custom
+combos {
+    compatible = "zmk,combos";
+    combo_space {
+        timeout-ms = <50>;
+        key-positions = <69 70>;
+        bindings = <&kp SPACE>;
+    };
+    combo_enter {
+        timeout-ms = <50>;
+        key-positions = <70 71>;
+        bindings = <&kp ENTER>;
+    };
+    combo_cmda {
+        timeout-ms = <50>;
+        key-positions = <37 35>;
+        bindings = <&kp LG(A)>;
+    };
+    combo_cmdc {
+        timeout-ms = <50>;
+        key-positions = <37 49>;
+        bindings = <&kp LG(C)>;
+    };
+    combo_cmdf {
+        timeout-ms = <50>;
+        key-positions = <37 38>;
+        bindings = <&kp LG(F)>;
+    };
+    combo_cmdv {
+        timeout-ms = <50>;
+        key-positions = <37 50>;
+        bindings = <&kp LG(V)>;
+    };
+    combo_cmds {
+        timeout-ms = <50>;
+        key-positions = <37 36>;
+        bindings = <&kp LG(S)>;
+    }; 
+    combo_cmdz {
+        timeout-ms = <50>;
+        key-positions = <37 47>;
+        bindings = <&kp LG(Z)>;
+    };
+    combo_ctrlz {
+        timeout-ms = <50>;
+        key-positions = <35 47>;
+        bindings = <&kp LC(Z)>;
+    };
+    combo_tab {
+        timeout-ms = <50>;
+        key-positions = <52 69>;
+        bindings = <&kp TAB>;
+    };
+};
+
 behaviors {
 
     //////////////////////////////////////////////////////////////////
@@ -150,6 +205,18 @@ behaviors {
                          70 53     56 73                 \
                           71 54   55 72
 
+    // patroza custom
+    gqt2: global-quick-tap2 {
+        compatible = "zmk,behavior-hold-tap";
+        flavor = "tap-preferred";
+        label = "HOME_ROW_MODS_PINKY_GUI2";
+        #binding-cells = <2>;
+        bindings = <&gravey>, <&kp>;
+        tapping-term-ms = <320>; // extra delay
+        quick-tap-ms = <160>;
+        global-quick-tap;
+    };
+
     //
     // Home row mod-tap keys for all except index fingers
     //
@@ -271,6 +338,15 @@ behaviors {
 };
 
 macros {
+    // patroza custom
+    gravey: gravey {
+wait-ms = <10>;
+        label = "gravey";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE &kp SPACE>;
+    };
 
     //////////////////////////////////////////////////////////////////
     //

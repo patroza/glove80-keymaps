@@ -32,6 +32,11 @@ combos {
         key-positions = <37 35>;
         bindings = <&kp LG(A)>;
     };
+    combo_cmdx {
+        timeout-ms = <50>;
+        key-positions = <37 48>;
+        bindings = <&kp LG(X)>;
+    };
     combo_cmdc {
         timeout-ms = <50>;
         key-positions = <37 49>;

@@ -2,7 +2,7 @@
 
 Using various ideas like the miryoku layers from Engrammer layout by Sunaku
 
-layout: https://my.glove80.com/#/layout/user/a7687ac1-b01a-4901-91c2-742df3ddd536
+layout: https://my.glove80.com/#/layout/user/38b1565a-eb2f-45c9-bc05-5c9e86e7b9c5
 the json files aren't used currently
 
 Original readme follows

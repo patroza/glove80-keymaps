@@ -1,3 +1,12 @@
+# Fork of "Glorious Engrammer", using QWERTY
+
+Using various ideas like the miryoku layers from Engrammer layout by Sunaku
+
+layout: https://my.glove80.com/#/layout/user/a7687ac1-b01a-4901-91c2-742df3ddd536
+the json files aren't used currently
+
+Original readme follows
+
 # "Glorious Engrammer" keymaps for MoErgo Glove80
 
 These are [my Glove80][1] keymaps featuring the [Engram][2]([mer][3]) 

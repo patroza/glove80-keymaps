@@ -14,61 +14,67 @@
 //
 //////////////////////////////////////////////////////////////////////
 
+// must be set in glove80 layout editor advanced section
+#define CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY 10
+
 // patroza custom
 combos {
+    #define COMBO_TIMEOUT 70
     compatible = "zmk,combos";
-    combo_space {
-        timeout-ms = <50>;
-        key-positions = <69 70>;
-        bindings = <&kp SPACE>;
-    };
-    combo_enter {
-        timeout-ms = <50>;
-        key-positions = <70 71>;
-        bindings = <&kp ENTER>;
-    };
-    combo_cmda {
-        timeout-ms = <50>;
-        key-positions = <37 35>;
-        bindings = <&kp LG(A)>;
-    };
-    combo_cmdx {
-        timeout-ms = <50>;
-        key-positions = <37 48>;
-        bindings = <&kp LG(X)>;
-    };
+
     combo_cmdc {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 49>;
         bindings = <&kp LG(C)>;
     };
     combo_cmdf {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 38>;
         bindings = <&kp LG(F)>;
     };
     combo_cmdv {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 50>;
         bindings = <&kp LG(V)>;
     };
     combo_cmds {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 36>;
         bindings = <&kp LG(S)>;
-    }; 
+    };
+    combo_cmda {
+        timeout-ms = <COMBO_TIMEOUT>;
+        key-positions = <37 35>;
+        bindings = <&kp LG(A)>;
+    };
+    combo_cmdx {
+        timeout-ms = <COMBO_TIMEOUT>;
+        key-positions = <37 48>;
+        bindings = <&kp LG(X)>;
+    };
     combo_cmdz {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 47>;
         bindings = <&kp LG(Z)>;
     };
     combo_ctrlz {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <35 47>;
         bindings = <&kp LC(Z)>;
     };
+
+    combo_space {
+        timeout-ms = <COMBO_TIMEOUT>;
+        key-positions = <69 70>;
+        bindings = <&kp SPACE>;
+    };
+    combo_enter {
+        timeout-ms = <COMBO_TIMEOUT>;
+        key-positions = <70 71>;
+        bindings = <&kp ENTER>;
+    };
     combo_tab {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <52 69>;
         bindings = <&kp TAB>;
     };

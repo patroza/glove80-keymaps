@@ -22,47 +22,7 @@ combos {
     #define COMBO_TIMEOUT 70
     compatible = "zmk,combos";
 
-    combo_cmdc {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 49>;
-        bindings = <&kp LG(C)>;
-    };
-    combo_cmdf {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 38>;
-        bindings = <&kp LG(F)>;
-    };
-    combo_cmdv {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 50>;
-        bindings = <&kp LG(V)>;
-    };
-    combo_cmds {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 36>;
-        bindings = <&kp LG(S)>;
-    };
-    combo_cmda {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 35>;
-        bindings = <&kp LG(A)>;
-    };
-    combo_cmdx {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 48>;
-        bindings = <&kp LG(X)>;
-    };
-    combo_cmdz {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 47>;
-        bindings = <&kp LG(Z)>;
-    };
-    combo_ctrlz {
-        timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <35 47>;
-        bindings = <&kp LC(Z)>;
-    };
-
+    // left hand keys from right thumbs, for RHOM
     combo_space {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <69 70>;
@@ -78,6 +38,73 @@ combos {
         key-positions = <52 69>;
         bindings = <&kp TAB>;
     };
+    combo_super {
+        timeout-ms = <COMBO_TIMEOUT>;
+        key-positions = <52 53>;
+        bindings = <&kp LG(LC(LALT))>;
+    };   
+    // RHOM; one handed combos for left
+    // disabled for now as it messes up doing multi combos like cmd+shift+p
+    // combo_cmdc {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 49>;
+    //     bindings = <&kp LG(C)>;
+    // };
+    // combo_cmdf {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 38>;
+    //     bindings = <&kp LG(F)>;
+    // };
+    // combo_cmdv {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 50>;
+    //     bindings = <&kp LG(V)>;
+    // };
+    // combo_cmds {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 36>;
+    //     bindings = <&kp LG(S)>;
+    // };
+    // combo_cmda {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 35>;
+    //     bindings = <&kp LG(A)>;
+    // };
+    // combo_cmdx {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 48>;
+    //     bindings = <&kp LG(X)>;
+    // };
+    // combo_cmdz {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 47>;
+    //     bindings = <&kp LG(Z)>;
+    // };
+    // combo_cmdgrave {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 46>;
+    //     bindings = <&kp LG(GRAVE)>;
+    // };
+    // combo_cmdr {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 26>;
+    //     bindings = <&kp LG(R)>;
+    // };
+    // combo_cmdt {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <37 27>;
+    //     bindings = <&kp LG(T)>;
+    // };
+    // combo_ctrlz {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <35 47>;
+    //     bindings = <&kp LC(Z)>;
+    // };
+    // combo_ctrlc {
+    //     timeout-ms = <COMBO_TIMEOUT>;
+    //     key-positions = <35 49>;
+    //     bindings = <&kp LC(C)>;
+    // };
 };
 
 behaviors {

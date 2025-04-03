@@ -9,14 +9,14 @@ precedence: [LSFT, LALT, RALT, LCTL, RCTL, RSFT] # latter overrides former: RSFT
 # Where <modifier> is either LALT, RALT, LCTL, RCTL, or RSFT.
 #
 transforms:
-  I: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave                                 }
-  E: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   LALT: oe,      RALT: ae      }
-  A: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: ring    }
-  Y: { base: acute,   LCTL: diaeresis                                                                }
-  O: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: slash   }
-  U: { base: acute,   LCTL: diaeresis, RCTL: circumflex, RSFT: grave                                 }
+  I: { base: diaeresis,   LCTL: acute, RCTL: circumflex, RSFT: grave                                 }
+  E: { base: diaeresis,   LCTL: acute, RCTL: circumflex, RSFT: grave,   LALT: oe,      RALT: ae      }
+  A: { base: diaeresis,   LCTL: acute, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: ring    }
+  Y: { base: diaeresis,   LCTL: acute                                                                }
+  O: { base: diaeresis,   LCTL: acute, RCTL: circumflex, RSFT: grave,   LALT: tilde,   RALT: slash   }
+  U: { base: diaeresis,   LCTL: acute, RCTL: circumflex, RSFT: grave                                 }
   consonants:
-     { base: cedilla, LCTL: ntilde,    RCTL: eszett                                                  }
+     { base: eszett, LCTL: ntilde,    RCTL: cedilla                                                  }
   quotes_left:
      { base: angle,   LCTL: curly,     RCTL: low,        RSFT: grave,   LALT: corner1, RALT: corner2 }
   quotes_right:

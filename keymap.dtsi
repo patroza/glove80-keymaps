@@ -126,6 +126,88 @@
 //
 // Keymap specific knowledge of the base layer's alpha + ZMK layout
 //
+#if defined(LAYER_QWERTY) && LAYER_QWERTY == 0
+#define KEY_LH_C6R1 UP
+#define KEY_LH_C5R1 DOWN
+#define KEY_LH_C4R1 C_PREV
+#define KEY_LH_C3R1 C_PP
+#define KEY_LH_C2R1 C_NEXT
+#define KEY_RH_C2R1 C_MUTE
+#define KEY_RH_C3R1 C_VOL_DN
+#define KEY_RH_C4R1 C_VOL_UP
+#define KEY_RH_C5R1 LEFT
+#define KEY_RH_C6R1 RIGHT
+#define KEY_LH_C6R2 EQUAL
+#define KEY_LH_C5R2 N1
+#define KEY_LH_C4R2 N2
+#define KEY_LH_C3R2 N3
+#define KEY_LH_C2R2 N4
+#define KEY_LH_C1R2 N5
+#define KEY_RH_C1R2 N6
+#define KEY_RH_C2R2 N7
+#define KEY_RH_C3R2 N8
+#define KEY_RH_C4R2 N9
+#define KEY_RH_C5R2 N0
+#define KEY_RH_C6R2 MINUS
+#define KEY_LH_C6R3 TAB
+#define KEY_LH_C5R3 Q
+#define KEY_LH_C4R3 W
+#define KEY_LH_C3R3 E
+#define KEY_LH_C2R3 R
+#define KEY_LH_C1R3 T
+#define KEY_RH_C1R3 Y
+#define KEY_RH_C2R3 U
+#define KEY_RH_C3R3 I
+#define KEY_RH_C4R3 O
+#define KEY_RH_C5R3 P
+#define KEY_RH_C6R3 BSLH
+#define KEY_LH_C6R4 CAPS
+#define KEY_LH_C5R4 A
+#define KEY_LH_C4R4 S
+#define KEY_LH_C3R4 D
+#define KEY_LH_C2R4 F
+#define KEY_LH_C1R4 G
+#define KEY_RH_C1R4 H
+#define KEY_RH_C2R4 J
+#define KEY_RH_C3R4 K
+#define KEY_RH_C4R4 L
+#define KEY_RH_C5R4 SEMI
+#define KEY_RH_C6R4 SQT
+#define KEY_LH_C6R5 LSFT
+#define KEY_LH_C5R5 Z
+#define KEY_LH_C4R5 X
+#define KEY_LH_C3R5 C
+#define KEY_LH_C2R5 V
+#define KEY_LH_C1R5 B
+#define KEY_LH_T1 ESC
+#define KEY_LH_T2 K_APP
+#define KEY_LH_T3 0
+#define KEY_RH_T3 0
+#define KEY_RH_T2 INSERT
+#define KEY_RH_T1 ENTER
+#define KEY_RH_C1R5 N
+#define KEY_RH_C2R5 M
+#define KEY_RH_C3R5 COMMA
+#define KEY_RH_C4R5 DOT
+#define KEY_RH_C5R5 FSLH
+#define KEY_RH_C6R5 RSFT
+#define KEY_LH_C6R6 0
+#define KEY_LH_C5R6 GRAVE
+#define KEY_LH_C4R6 LBKT
+#define KEY_LH_C3R6 RBKT
+#define KEY_LH_C2R6 LSFT
+#define KEY_LH_T4 BACKSPACE
+#define KEY_LH_T5 DELETE
+#define KEY_LH_T6 0
+#define KEY_RH_T6 0
+#define KEY_RH_T5 TAB
+#define KEY_RH_T4 SPACE
+#define KEY_RH_C2R6 RSFT
+#define KEY_RH_C3R6 LPAR
+#define KEY_RH_C4R6 RPAR
+#define KEY_RH_C5R6 BSLH
+#define KEY_RH_C6R6 0
+#endif
 #if defined(LAYER_Enthium) && LAYER_Enthium == 0
 #define KEY_LH_C6R1 HOME
 #define KEY_LH_C5R1 END
@@ -514,88 +596,6 @@
 #define KEY_RH_T2 INSERT
 #define KEY_RH_T1 ENTER
 #define KEY_RH_C1R5 K
-#define KEY_RH_C2R5 M
-#define KEY_RH_C3R5 COMMA
-#define KEY_RH_C4R5 DOT
-#define KEY_RH_C5R5 FSLH
-#define KEY_RH_C6R5 RSFT
-#define KEY_LH_C6R6 0
-#define KEY_LH_C5R6 GRAVE
-#define KEY_LH_C4R6 LBKT
-#define KEY_LH_C3R6 RBKT
-#define KEY_LH_C2R6 LSFT
-#define KEY_LH_T4 BACKSPACE
-#define KEY_LH_T5 DELETE
-#define KEY_LH_T6 0
-#define KEY_RH_T6 0
-#define KEY_RH_T5 TAB
-#define KEY_RH_T4 SPACE
-#define KEY_RH_C2R6 RSFT
-#define KEY_RH_C3R6 LPAR
-#define KEY_RH_C4R6 RPAR
-#define KEY_RH_C5R6 BSLH
-#define KEY_RH_C6R6 0
-#endif
-#if defined(LAYER_QWERTY) && LAYER_QWERTY == 0
-#define KEY_LH_C6R1 UP
-#define KEY_LH_C5R1 DOWN
-#define KEY_LH_C4R1 A
-#define KEY_LH_C3R1 B
-#define KEY_LH_C2R1 C
-#define KEY_RH_C2R1 D
-#define KEY_RH_C3R1 E
-#define KEY_RH_C4R1 F
-#define KEY_RH_C5R1 LEFT
-#define KEY_RH_C6R1 RIGHT
-#define KEY_LH_C6R2 EQUAL
-#define KEY_LH_C5R2 N1
-#define KEY_LH_C4R2 N2
-#define KEY_LH_C3R2 N3
-#define KEY_LH_C2R2 N4
-#define KEY_LH_C1R2 N5
-#define KEY_RH_C1R2 N6
-#define KEY_RH_C2R2 N7
-#define KEY_RH_C3R2 N8
-#define KEY_RH_C4R2 N9
-#define KEY_RH_C5R2 N0
-#define KEY_RH_C6R2 MINUS
-#define KEY_LH_C6R3 TAB
-#define KEY_LH_C5R3 Q
-#define KEY_LH_C4R3 W
-#define KEY_LH_C3R3 E
-#define KEY_LH_C2R3 R
-#define KEY_LH_C1R3 T
-#define KEY_RH_C1R3 Y
-#define KEY_RH_C2R3 U
-#define KEY_RH_C3R3 I
-#define KEY_RH_C4R3 O
-#define KEY_RH_C5R3 P
-#define KEY_RH_C6R3 BSLH
-#define KEY_LH_C6R4 CAPS
-#define KEY_LH_C5R4 A
-#define KEY_LH_C4R4 S
-#define KEY_LH_C3R4 D
-#define KEY_LH_C2R4 F
-#define KEY_LH_C1R4 G
-#define KEY_RH_C1R4 H
-#define KEY_RH_C2R4 J
-#define KEY_RH_C3R4 K
-#define KEY_RH_C4R4 L
-#define KEY_RH_C5R4 SEMI
-#define KEY_RH_C6R4 SQT
-#define KEY_LH_C6R5 LSFT
-#define KEY_LH_C5R5 Z
-#define KEY_LH_C4R5 X
-#define KEY_LH_C3R5 C
-#define KEY_LH_C2R5 V
-#define KEY_LH_C1R5 B
-#define KEY_LH_T1 ESC
-#define KEY_LH_T2 K_APP
-#define KEY_LH_T3 0
-#define KEY_RH_T3 0
-#define KEY_RH_T2 INSERT
-#define KEY_RH_T1 ENTER
-#define KEY_RH_C1R5 N
 #define KEY_RH_C2R5 M
 #define KEY_RH_C3R5 COMMA
 #define KEY_RH_C4R5 DOT
@@ -7338,13 +7338,13 @@ UNICODE_MORPH_MODS
   world_i_base: world_i_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_i_acute>, <&world_i_LCTL>;
+    bindings = <&world_i_diaeresis>, <&world_i_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
   };
   world_i_LCTL: world_i_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_i_diaeresis>, <&world_i_RCTL>;
+    bindings = <&world_i_acute>, <&world_i_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_i_RCTL: world_i_RCTL {
@@ -7356,7 +7356,7 @@ UNICODE_MORPH_MODS
   world_e_base: world_e_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_e_acute>, <&world_e_LALT>;
+    bindings = <&world_e_diaeresis>, <&world_e_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
   };
   world_e_LALT: world_e_LALT {
@@ -7374,7 +7374,7 @@ UNICODE_MORPH_MODS
   world_e_LCTL: world_e_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_e_diaeresis>, <&world_e_RCTL>;
+    bindings = <&world_e_acute>, <&world_e_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_e_RCTL: world_e_RCTL {
@@ -7386,7 +7386,7 @@ UNICODE_MORPH_MODS
   world_a_base: world_a_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_a_acute>, <&world_a_LALT>;
+    bindings = <&world_a_diaeresis>, <&world_a_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
   };
   world_a_LALT: world_a_LALT {
@@ -7404,7 +7404,7 @@ UNICODE_MORPH_MODS
   world_a_LCTL: world_a_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_a_diaeresis>, <&world_a_RCTL>;
+    bindings = <&world_a_acute>, <&world_a_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_a_RCTL: world_a_RCTL {
@@ -7416,13 +7416,13 @@ UNICODE_MORPH_MODS
   world_y_base: world_y_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_y_acute>, <&world_y_diaeresis>;
+    bindings = <&world_y_diaeresis>, <&world_y_acute>;
     mods = <(MOD_LCTL)>;
   };
   world_o_base: world_o_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_o_acute>, <&world_o_LALT>;
+    bindings = <&world_o_diaeresis>, <&world_o_LALT>;
     mods = <(MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
   };
   world_o_LALT: world_o_LALT {
@@ -7440,7 +7440,7 @@ UNICODE_MORPH_MODS
   world_o_LCTL: world_o_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_o_diaeresis>, <&world_o_RCTL>;
+    bindings = <&world_o_acute>, <&world_o_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_o_RCTL: world_o_RCTL {
@@ -7452,13 +7452,13 @@ UNICODE_MORPH_MODS
   world_u_base: world_u_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_u_acute>, <&world_u_LCTL>;
+    bindings = <&world_u_diaeresis>, <&world_u_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
   };
   world_u_LCTL: world_u_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_u_diaeresis>, <&world_u_RCTL>;
+    bindings = <&world_u_acute>, <&world_u_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_u_RCTL: world_u_RCTL {
@@ -7470,13 +7470,13 @@ UNICODE_MORPH_MODS
   world_consonants_base: world_consonants_base {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_consonants_cedilla>, <&world_consonants_LCTL>;
+    bindings = <&world_consonants_eszett>, <&world_consonants_LCTL>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
   };
   world_consonants_LCTL: world_consonants_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_consonants_ntilde>, <&world_consonants_eszett>;
+    bindings = <&world_consonants_ntilde>, <&world_consonants_cedilla>;
     mods = <(MOD_RCTL)>;
   };
   world_quotes_left_base: world_quotes_left_base {
